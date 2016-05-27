@@ -1,0 +1,136 @@
+<html>
+<head>
+	<title>PennApps XIII Every Block Home</title>
+	
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,300italic,300,100italic,100,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+	<style>
+	body {
+		padding:0;
+		margin:0;
+	}
+	#background {
+		background-image:url(images/maps_background.png);
+		width:100%;
+		height:100%;
+		-webkit-filter: blur(3px) brightness(.4);
+		position:absolute;
+		z-index: -1;
+	}
+	#container {
+		text-align:center;
+		position: absolute;
+ 		top: 50%;
+  		left: 50%;
+  		transform: translate(-50%, -50%);
+	}
+
+	input {
+
+		height:55px;
+    	border: none;
+    	border-radius: 5px;
+    	padding: 5px 8px;
+    	color: #333;
+    	-webkit-box-shadow: 
+        inset 0 2px 0 rgba(0,0,0,.2), 
+        0 0 4px rgba(0,0,0,0.1);
+
+	}
+	input[type="text"] {
+    font-size:24px;
+	}
+	input:focus {
+		outline: none;
+    	-webkit-box-shadow: 
+        inset 0 2px 0 rgba(0,0,0,.2), 
+        0 0 4px rgba(0,0,0,0.1), 
+        0 0 5px 1px #90d462;
+	}
+	h1 {
+		font-family: 'Roboto', sans-serif;
+		color:#FFF;
+		font-size:40pt;
+		padding-bottom: 50px;
+
+	}
+	h5 {
+		font-family: 'Roboto', sans-serif;
+		color:#FFF;
+
+		font-size:18pt;
+		font-weight:400;
+
+	}
+	h4 {
+		font-family: 'Roboto', sans-serif;
+		color:#FFF;
+		font-size:18pt;
+		font-weight:400;
+
+	}
+
+	#submitzip {
+		display:inline-block;
+		overflow: hidden;
+		vertical-align:top;
+		width:100px;
+
+		text-align: center;
+		font-size: 22px;
+		line-height: 1;
+		padding: 9px 0;
+		border: 1px solid rgba(0, 0, 0, 0.3);
+		border-radius: 6px;
+		-webkit-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3) inset, 0px 1px 0px rgba(255, 255, 255, 0.3);
+		background-color: #90d462;
+		background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #97dd69), color-stop(1, #88cc5b));
+		text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.25);
+	}
+	#submitcurrent {
+		width:420px;
+
+		text-align: center;
+		font-size: 28px;
+		line-height: 1;
+		padding: 9px 0;
+		border: 1px solid rgba(0, 0, 0, 0.3);
+		border-radius: 6px;
+		-webkit-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3) inset, 0px 1px 0px rgba(255, 255, 255, 0.3);
+		background-color: #90d462;
+		background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #97dd69), color-stop(1, #88cc5b));
+		text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.25);
+	}
+	</style>
+
+	
+
+
+</head>
+<body>
+
+<div id="background">
+</div>
+
+<div id="container">
+<h1>Discover your Neighborhood</h1>
+
+	<h5>Enter your zipcode here:</h5>
+	<form action="map.html" method="GET">
+		<input type="text" name="zipcode">
+		<input type="submit" value="Submit" id="submitzip">
+	</form>
+
+<h4>or</h4>
+
+	<form>
+		<input type="submit" value="Use Current Location" id="submitcurrent">
+	</form>
+
+
+</div>
+
+
+</body>
+</html>
